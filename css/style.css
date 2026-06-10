@@ -40,7 +40,7 @@
         
         & .menu__link { 
             text-decoration: none;
-            font-size: clamp(1.1rem, 1.4vw, 1.2rem);
+            font-size: clamp(1.15rem, 2vw, 1.4rem);
             padding: clamp(5px, 0.4vw, 10px);
             border-radius: 8px;
             color: var(--color-text);
@@ -51,5 +51,42 @@
         & .active { 
             background-color: var(--color-footer);
         }        
+    }
+}
+
+.hero {
+    background-image: url(../assets/images/Background-1.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    aspect-ratio: 1440 / 860;
+
+    & .hero__text-big {
+        margin: 0;
+        padding: 4vw 0 0 14vw;
+        font-size: clamp(2.2rem, 3.8vw, 5rem);
+    }
+
+    & .hero__accent {
+        color: var(--color-accent);
+    }
+
+    & .hero__text-desc {
+        margin: 0;
+        padding: 4vw 0 0 14vw;
+        font-size: clamp(1.2rem, 2.5vw, 1.8rem);    
+    }
+
+        & .hero__button { 
+            margin: 3.6vw 0 0 13.8vw; 
+            padding: 
+                clamp(12px, 2vw, 18px)
+                clamp(18px, 3vw, 34px);
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: var(--color-card);
+            background-color: var(--color-accent);
+            border: 0;
+            border-radius: 5px;
+
     }
 }
