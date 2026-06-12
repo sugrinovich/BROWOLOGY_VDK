@@ -1,0 +1,70 @@
+@media (min-width: 320px) and (max-width: 690px) {
+    .header {
+        height: auto;
+        min-height: 235px;
+    }
+    .menu__list {
+        flex-wrap: wrap;
+    }
+    .hero {
+        background-image: url(../assets/images/Background-2.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100% auto;
+        aspect-ratio: 1160 / 1350;
+    }
+    .hero__info {
+        padding: 14vw 0 0 10vw;
+        max-width: 50vw;
+    }
+    .hero__text-big {
+        font-size: clamp(1rem, 6.5vw, 2.4rem);
+    }
+    .hero__text-desc {
+        font-size: clamp(0.8rem, 3.8vw, 1.6rem);    
+    }
+    .button {
+        padding: 2.4vw;
+        font-size: clamp(0.6rem, 2.5vw, 2rem);
+    }
+    .about__main {
+        flex-direction: column;
+    }
+    .about__tittle {
+        order: 1;
+    }
+    .about__text {
+        width: 100%;
+        order: 3;
+        flex: 0 0 auto;
+        
+    }
+    .about__desc {
+        text-align: center;
+        margin: 0;
+        padding: 4vw 10vw 0 10vw;
+        font-size: clamp(1.2rem, 2.5vw, 1.8rem);   
+    }   
+    .about__card {
+        padding-top: 8vw;
+        order: 2;
+        justify-content: center;
+        flex: 0 0 auto;
+    }
+    .about__icons {
+        flex-wrap: wrap;
+        gap: clamp(20px, 10.2vw, 70px);
+    }
+    .about__icons-text {
+        font-size: clamp(1rem, 2vw, 1.4rem);  
+    }
+    .about__icons-text {
+        /* max-width: 32.8vw; */
+        font-size: clamp(1.1rem, 2vw, 1.6rem);  
+        text-align: center;
+        margin: 0;
+    }
+    .about__icons-img {
+        width: 80px;
+    }
+}
