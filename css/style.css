@@ -89,7 +89,7 @@
     position: relative;
     background:
         radial-gradient(circle at top right, var(--color-under-hero), transparent 100%),
-        linear-gradient(180deg, #FBF2EC 100%, var(--color-bg-soft) 50%, var(--color-bg) 0%);
+        linear-gradient(180deg, #FBF2EC 0%, var(--color-bg) 50%, var(--color-card) 100%);
 }
 .about__main {
     display: flex;
@@ -100,30 +100,13 @@
 }
 .about__card {
     display: flex;
-    flex: 0 0 40%;
+    flex: 0 0 34%;
     justify-content: flex-start;
     padding: 2vw 0 0 6vw;
 }
 .about__card-img {
     width: clamp(180px, 22.5vw, 250px);
     border-radius: 30px;
-}
-.about__title {
-    display: flex;
-    align-items: center;
-    gap: 3vw;
-    margin: 0;
-    padding: 8vw 0 0 18vw;
-    font-weight: normal;
-    font-size: clamp(2.2rem, 3.8vw, 3.5rem);
-}
-.about__title::after {
-    content: "";
-    width: clamp(60px, 10vw, 120px);
-    height: 0.4vw;
-    background: linear-gradient(90deg, var(--color-accent) 0%, transparent 100%);
-    transform: translateY(0.3vw);
-    border-radius: 5px;
 }
 .about__decoration-img {
     position: absolute;
@@ -132,6 +115,7 @@
     width: clamp(100px, 10vw, 200px);
 }   
 .about__desc {
+    text-align: justify;
     margin: 0;
     padding: 4vw 0 0 10vw;
     font-size: clamp(1.2rem, 2.5vw, 1.8rem);   
@@ -156,3 +140,84 @@
     width: clamp(70px, 10vw, 120px);
     height: clamp(80px, 10vw, 120px);
 }
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    margin: 0;
+    padding: 8vw 0 3vw 0;
+    font-weight: normal;
+    font-size: clamp(2.2rem, 3.8vw, 3.5rem);
+}
+.title::after {
+    content: "";
+    width: clamp(60px, 10vw, 120px);
+    height: 0.4vw;
+    background: linear-gradient(90deg, var(--color-accent) 0%, transparent 100%);
+    transform: translateY(0.3vw);
+    border-radius: 5px;
+}
+.title::before {
+    content: "";
+    width: clamp(60px, 10vw, 120px);
+    height: 0.4vw;
+    background: linear-gradient(270deg, var(--color-accent) 0%, transparent 100%);
+    transform: translateY(0.3vw);
+    border-radius: 5px;
+}
+.title__cards {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 0;
+    font-size: clamp(1.35rem, 3vw, 2rem);  
+}
+.card__text {
+    
+    margin-bottom: 0;
+    padding-left: 2vw;
+    font-size: clamp(1.1rem, 2vw, 1.6rem); 
+}
+.card__text-price {
+    padding-left: 2vw;
+    font-size: clamp(1.1rem, 2vw, 1.6rem); 
+}
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(10px, 4vw, 50px);
+    background-color: var(--color-card);
+
+}
+.services__item {
+    display: flex;
+    flex-direction: row;
+    gap: clamp(10px, 2vw, 30px);  
+    border: 1px solid var(--color-border);
+    border-radius: 20px; 
+    width: clamp(300px, 80vw, 1000px);
+    height: clamp(180px, 20vw, 240px);
+}
+.services__item-text {
+    flex: 1;
+    text-align: justify;
+    hyphens: auto;
+}
+.services__item-img {
+    width: clamp(150px, 26vw, 280px);
+    border-radius: 20px;
+    aspect-ratio: 1150 / 915;
+}
+.services__item-icon {
+    width: clamp(120px, 16.5vw, 160px);
+    height: clamp(140px, 18vw, 180px);
+}
+.about__icons-wrap {
+    display: flex;
+    align-items: center;
+}
+.services__button {
+    margin: 0;
+}
+

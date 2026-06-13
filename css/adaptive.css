@@ -30,7 +30,7 @@
     .about__main {
         flex-direction: column;
     }
-    .about__tittle {
+    .tittle {
         order: 1;
     }
     .about__text {
@@ -40,7 +40,8 @@
         
     }
     .about__desc {
-        text-align: center;
+        text-align: justify;
+        hyphens: auto;
         margin: 0;
         padding: 4vw 10vw 0 10vw;
         font-size: clamp(1.2rem, 2.5vw, 1.8rem);   
@@ -66,5 +67,25 @@
     }
     .about__icons-img {
         width: 80px;
+    }
+
+    .vizability {
+        display: none;
+    }
+    .services__item {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .services__item-text {
+        text-align: justify;
+        hyphens: auto;
+        padding: 0 4vw 0 4vw;
+        text-align: justify;
+    }
+    .services__item-img {
+        width: clamp(180px, 45vw, 250px);
+        margin-bottom: 3vw;
     }
 }
