@@ -144,9 +144,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 3vw;
     margin: 0;
-    padding: 8vw 0 3vw 0;
+    padding: 6vw 0 3vw 0;
     font-weight: normal;
     font-size: clamp(2.2rem, 3.8vw, 3.5rem);
 }
@@ -173,7 +174,6 @@
     font-size: clamp(1.35rem, 3vw, 2rem);  
 }
 .card__text {
-    
     margin-bottom: 0;
     padding-left: 2vw;
     font-size: clamp(1.1rem, 2vw, 1.6rem); 
@@ -219,5 +219,26 @@
 }
 .services__button {
     margin: 0;
+}
+
+.gallery {
+    background: linear-gradient(180deg, var(--color-card) 0%, var(--color-bg) 50%, var(--color-card) 100%);
+}
+.gallery_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+.gallery_card {
+    flex-basis: calc((90% - 40px) / 3);
+    border-radius: 20px;
+}
+.gallary_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: fill;
 }
 

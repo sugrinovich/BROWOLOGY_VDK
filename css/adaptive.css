@@ -88,4 +88,23 @@
         width: clamp(180px, 45vw, 250px);
         margin-bottom: 3vw;
     }
+    .gallery_items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery_card {
+        flex-basis: auto;
+        width: clamp(250px, 65vw, 500px);
+    }
+}
+
+@media (max-width: 900px) {
+
+    .gallery_card {
+        flex-basis: calc((90% - 40px) / 2);
+        border-radius: 20px;
+    }
+    .last { 
+        display: none;
+    }
 }
