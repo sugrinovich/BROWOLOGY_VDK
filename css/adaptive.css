@@ -96,6 +96,17 @@
         flex-basis: auto;
         width: clamp(250px, 65vw, 500px);
     }
+    .reviews_item {
+        margin-top: clamp(30px, 12vw, 35px);
+        flex-direction: column;
+        align-items: center;
+    }
+    .reviews_card {
+        width: clamp(300px, 58vw, 400px);
+    }   
+    .review_quote {
+        font-size: clamp(3rem, 8vw, 8rem); 
+    } 
 }
 
 @media (max-width: 900px) {
@@ -107,4 +118,14 @@
     .last { 
         display: none;
     }
+        .reviews_item {
+        flex-wrap: wrap;
+        gap: clamp(40px, 6vw, 50px);
+    }
+    .reviews_card {
+        flex-basis: calc((90% - 40px) / 2);
+    }
+        .review_quote {
+        font-size: clamp(3rem, 6.5vw, 5rem); 
+    } 
 }
