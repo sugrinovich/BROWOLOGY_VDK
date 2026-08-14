@@ -102,11 +102,27 @@
         align-items: center;
     }
     .reviews_card {
-        width: clamp(300px, 58vw, 400px);
+        width: clamp(280px, 62vw, 400px);
     }   
     .review_quote {
         font-size: clamp(3rem, 8vw, 8rem); 
     } 
+    .footer__info {
+        flex-direction: column;
+    }
+    .footer__info-item {
+        align-items: center;
+    }
+    .footer__map {
+        margin-top: 4vw;
+    }
+    .footer__logo {
+        width: clamp(180px, 30vw, 360px);
+    }
+    .iframe {
+        width: clamp(250px, 80vw, 600px);
+        height: clamp(200px, 45vw, 500px); 
+    }
 }
 
 @media (max-width: 900px) {
@@ -128,4 +144,10 @@
         .review_quote {
         font-size: clamp(3rem, 6.5vw, 5rem); 
     } 
+}
+
+@media (min-width: 1120px) {
+    .footer__info-item:first-child {
+        padding-left: 10vw;
+    }
 }
