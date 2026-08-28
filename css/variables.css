@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../assets/fonts/PlayfairDisplay-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("../assets/fonts/Montserrat-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-bg: #FBF7F2;
+    --color-bg-soft: #F7ECE5;
+    --color-card: #FFF9F5;
+    --color-footer: #EFD1C8;
+
+    --color-accent: #B66F65;
+    --color-accent-light: #D9A294;
+    --color-accent-dark: #8F514A;
+
+    --color-text: #24211F;
+    --color-text-muted: #625956;
+    --color-border: #E9D8CF;  
+
+    --color-under-hero: #FAEFE9;
+
+}
+
+
+

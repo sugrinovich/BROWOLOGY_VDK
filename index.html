@@ -13,7 +13,7 @@
     >
     
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/veriables.css">
+    <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/adaptive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -31,42 +31,39 @@
         <nav class="menu">
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a class="menu__link active" href="#">Главная</a>
+                    <a class="menu__link" href="#hero">Главная</a>
                 </li>
                 <li class="menu__item">
-                     <a class="menu__link" href="#">О нас</a>
+                     <a class="menu__link" href="#about">О нас</a>
                 </li>
                 <li class="menu__item">
-                     <a class="menu__link" href="#">Услуги</a>
+                     <a class="menu__link" href="#services">Услуги</a>
                 </li>
                 <li class="menu__item">
-                     <a class="menu__link" href="#">Материалы</a>
+                     <a class="menu__link" href="#gallery">Галерея</a>
                 </li>
                 <li class="menu__item">
-                     <a class="menu__link" href="#">Галерея</a>
+                     <a class="menu__link" href="#reviews">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                     <a class="menu__link" href="#">Отзывы</a>
-                </li>
-                <li class="menu__item">
-                     <a class="menu__link" href="#">Контакты</a>
+                     <a class="menu__link" href="#footer">Контакты</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero__info">
             <p class="hero__text-big">Ваши идеальные <br>брови &mdash; <span class="hero__accent">наша <br>экспертиза</span></p>
-            <p class="hero__text-desc">Подчеркнём вашу естественную <br><span class="hero__accent">красоту</span> с особым вниманием <br>и профессионализмом</p>
-            <p class="hero__text-desc">Напишите нам — подберём <br><span class="hero__accent">удобное время</span>  для записи</p>
-            <button class="button" type="button">
-                Записаться онлайн &emsp; &rarr;
+            <p class="hero__text-desc">Подчеркнём вашу естественную <br><span class="hero__accent">красоту</span> с особым вниманием и <br class="desktop-br">профессионализмом</p>
+            <p class="hero__text-desc">Напишите нам — подберём <span class="hero__accent"><br class="desktop-br">удобное <br class="mobile-br">время</span>  для записи</p>
+            <button class="button whatsup_open" type="button">
+                Записаться онлайн
             </button>            
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <h2 class="title">О нас</h2>
         <div class="about__main">
             <div class="about__text">
@@ -107,7 +104,7 @@
 
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <h2 class="title">Услуги</h2>
         <div class="services__item">
             <div class="about__icons-wrap vizability">
@@ -174,12 +171,12 @@
             </div>
             <img class="services__item-img" src="assets/icons/Example.png"> 
         </div>            
-        <button class="button services__button" type="button">
-            Записаться онлайн &emsp; &rarr;
+        <button class="button div__button whatsup_open" type="button">
+            Записаться онлайн
         </button> 
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <h2 class="title">Галерея работ</h2>
         <div class="gallery_items">
             <div class="gallery_card">
@@ -208,57 +205,63 @@
             </div>   
             <div class="gallery_card vizability last">
                 <img class="gallary_img" src="assets/icons/Example.png">
-            </div>   
+            </div>
+            <button class="button div__button" type="button" id="inst_open">
+                Смотреть больше работ
+            </button>    
         </div>
     </section>
 
-    <section class="reviews"> 
+    <section class="reviews" id="reviews"> 
         <h2 class="title">Отзывы наших клиентов</h2> 
         <div class="reviews_item">
             <div class="reviews_card">
                 <div class="reviews_card-img">
                     <img class="reviews_img" src="assets/icons/About.png">
                 </div>
-                <h2 class="reviews_card-title">Мария</h2>
+                <h2 class="reviews_card-title">Виктория</h2>
                 <div class="review_stars">★★★★★</div>
-                <p class="reviews_text">Очень довольна результатом! <br>Брови выглядят естественно <br>и ухоженно. Спасибо! <br>Обязательно приду еще раз!</p>
+                <p class="reviews_text">Прекрасная студия, <br>хожу не первый раз, все очень нравится. Мастер Яна- профессионал <br>своего дела 🥰🌸</p>
+                <a class="links color-link" href="https://2gis.ru/reviews/70000001117090049/review/273304740">2Гис</a>
                 <div class="review_quote">”</div>
             </div>
             <div class="reviews_card">
                 <div class="reviews_card-img">
                     <img class="reviews_img" src="assets/icons/About.png">
                 </div>
-                <h2 class="reviews_card-title">Мария</h2>
+                <h2 class="reviews_card-title">Сергей</h2>
                 <div class="review_stars">★★★★★</div>
-                <p class="reviews_text">Очень довольна результатом! <br>Брови выглядят естественно <br>и ухоженно. Спасибо! <br>Обязательно приду еще раз!</p>
+                <p class="reviews_text">Приятная атмосфера, все чисто и аккуратно! Мастер отлично выполнила работу, результатом остался доволен!😍</p>
+                <a class="links color-link" href="https://2gis.ru/reviews/70000001117090049/review/273224097">2Гис</a>
                 <div class="review_quote">”</div>
             </div>
             <div class="reviews_card">
                 <div class="reviews_card-img">
                     <img class="reviews_img" src="assets/icons/About.png">
                 </div>
-                <h2 class="reviews_card-title">Мария</h2>
+                <h2 class="reviews_card-title">Диана</h2>
                 <div class="review_stars">★★★★★</div>
-                <p class="reviews_text">Очень довольна результатом! <br>Брови выглядят естественно <br>и ухоженно. Спасибо! <br>Обязательно приду еще раз!</p>
+                <p class="reviews_text">Очень понравился результат! Всё чисто, аккуратно и быстро. Обязательно вернусь ещё.</p>
+                <a class="links color-link" href="https://2gis.ru/reviews/70000001117090049/review/273300572">2Гис</a>
                 <div class="review_quote">”</div>
             </div>
         </div>
     </section>
 
-    <section class="footer">
+    <section class="footer" id="footer">
         <div class="footer__info">
             <div class="footer__info-item">
                 <img class="footer__logo" src="assets/icons/Logo.png" alt="Логотоип салона красоты">
             </div>
             <div class="footer__info-item">
                 <div class="footer__desc">
-                    <a class="links"><i class="fa-brands fa-whatsapp"></i> +7-(914)-336-60-58</a>
+                    <a class="links phone" href="https://wa.me/79143366058"><i class="fa-brands fa-whatsapp"></i> +7-(914)-336-60-58</a>
                 </div>
                 <div class="footer__desc">
-                    <a class="links"><i class="fa-brands fa-instagram"></i> BROWOLOGY_VDK</a>
+                    <a class="links" href="https://www.instagram.com/_browology_vdk_?igsi=MXU4dXN3dGEwNmwwbg=="><i class="fa-brands fa-instagram"></i> BROWOLOGY_VDK</a>
                 </div>
                 <div class="footer__desc">
-                    <a class="links" href="https://go.2gis.com/UGSxq"><i class="fa-solid fa-location-dot"></i> Партизанский простпект, 58-в</a>
+                    <a class="links" href="https://go.2gis.com/BJdWg"><i class="fa-solid fa-location-dot"></i> Партизанский простпект, 58-в</a>
                 </div>
             </div>
         </div>

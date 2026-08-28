@@ -1,4 +1,11 @@
 @media (min-width: 320px) and (max-width: 690px) {
+    .desktop-br {
+        display: none;
+    }
+    .mobile-br {
+        
+    }
+
     .header {
         height: auto;
         min-height: 235px;
@@ -14,18 +21,25 @@
         aspect-ratio: 1160 / 1350;
     }
     .hero__info {
-        padding: 14vw 0 0 10vw;
-        max-width: 50vw;
+        padding: 4vw 0 0 10vw;
+        max-width: 48vw;
     }
     .hero__text-big {
-        font-size: clamp(1rem, 6.5vw, 2.4rem);
+        font-size: clamp(1.2rem, 6vw, 2.4rem);
     }
     .hero__text-desc {
-        font-size: clamp(0.8rem, 3.8vw, 1.6rem);    
+        font-size: clamp(0.9rem, 3.2vw, 1.6rem); 
+        line-height: clamp(20px, 4vw, 25px);   
     }
     .button {
-        padding: 2.4vw;
-        font-size: clamp(0.6rem, 2.5vw, 2rem);
+        padding: 
+            clamp(10px, 2vw, 14px)
+            clamp(12px, 2vw, 16px);
+        font-size: clamp(0.8rem, 3vw, 1.6rem);
+    }
+    .div__button {
+        margin-top: 2vw;
+        font-size: clamp(0.9rem, 3vw, 1.6rem);
     }
     .about__main {
         flex-direction: column;
@@ -44,7 +58,8 @@
         hyphens: auto;
         margin: 0;
         padding: 4vw 10vw 0 10vw;
-        font-size: clamp(1.2rem, 2.5vw, 1.8rem);   
+        font-size: clamp(1rem, 2.5vw, 1.8rem);   
+        line-height: 25px; 
     }   
     .about__card {
         padding-top: 8vw;
@@ -61,7 +76,7 @@
     }
     .about__icons-text {
         /* max-width: 32.8vw; */
-        font-size: clamp(1.1rem, 2vw, 1.6rem);  
+        font-size: clamp(0.9rem, 2vw, 1.6rem);  
         text-align: center;
         margin: 0;
     }
@@ -83,6 +98,7 @@
         hyphens: auto;
         padding: 0 4vw 0 4vw;
         text-align: justify;
+        line-height: 25px; 
     }
     .services__item-img {
         width: clamp(180px, 45vw, 250px);
@@ -101,9 +117,13 @@
         flex-direction: column;
         align-items: center;
     }
+    .reviews_text {
+        line-height: 25px; 
+    }  
     .reviews_card {
         width: clamp(280px, 62vw, 400px);
-    }   
+        
+    }  
     .review_quote {
         font-size: clamp(3rem, 8vw, 8rem); 
     } 
