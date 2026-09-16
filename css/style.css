@@ -1,4 +1,6 @@
-
+.body {
+    margin: 0;
+}
 .header {
     position: relative;
     height: 210px;
@@ -26,14 +28,14 @@
 .menu__list {
     display: flex;
     justify-content: center;
-    gap: clamp(15px, 3.5vw, 50px);
+    gap: clamp(10px, 2.5vw, 50px);
     padding-left: 0;
     list-style: none;
     margin: 0;
 } 
 .menu__link { 
     text-decoration: none;
-    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
     padding: 7px;
     border-radius: 8px;
     color: var(--color-text);
