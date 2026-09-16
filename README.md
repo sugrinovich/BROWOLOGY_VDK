@@ -44,7 +44,6 @@ browology-vdk/
 │   └── fonts/
 │
 ├── css/
-│   ├── reset.css
 │   ├── variables.css
 │   ├── style.css
 │   └── adaptive.css
@@ -64,7 +63,6 @@ browology-vdk/
 
 ## CSS-файлы
 
-* `reset.css` — сброс стандартных стилей браузера.
 * `variables.css` — CSS-переменные: цвета, шрифты, размеры и отступы.
 * `style.css` — основные стили сайта.
 * `adaptive.css` — адаптация сайта под планшеты и мобильные устройства.
