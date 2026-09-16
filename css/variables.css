@@ -13,6 +13,7 @@
     font-display: swap;
 }
 
+
 :root {
     --color-bg: #FBF7F2;
     --color-bg-soft: #F7ECE5;
@@ -20,11 +21,10 @@
     --color-footer: #EFD1C8;
 
     --color-accent: #B66F65;
-    --color-accent-light: #D9A294;
+    --color-accent-other: #B88B7A;
     --color-accent-dark: #8F514A;
 
     --color-text: #24211F;
-    --color-text-muted: #625956;
     --color-border: #E9D8CF;  
 
     --color-under-hero: #FAEFE9;

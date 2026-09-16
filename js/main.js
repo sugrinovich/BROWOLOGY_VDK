@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    AOS.init({duration: 800, once: false});
+
     const button_singup = document.querySelectorAll('.whatsup_open');
     const button_watchall = document.getElementById('inst_open');
 
@@ -15,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = "https://www.instagram.com/_browology_vdk_?igsi=MXU4dXN3dGEwNmwwbg==";
     });
 
-    const link = document.querySelectorAll(".menu__link");
+    const links = document.querySelectorAll(".menu__link");
 
-    menuLinks.forEach(function (link) {
+    links.forEach(function (link) {
 
         link.addEventListener('click', function(event) {
 

@@ -2,7 +2,6 @@
     .desktop-br {
         display: none;
     }
-
     .header {
         height: auto;
         min-height: 235px;
@@ -26,7 +25,7 @@
     }
     .hero__text-desc {
         font-size: clamp(0.9rem, 3.2vw, 1.6rem); 
-        line-height: clamp(20px, 4vw, 25px);   
+        line-height: 1.5;  
     }
     .button {
         padding: 
@@ -41,9 +40,6 @@
     .about__main {
         flex-direction: column;
     }
-    .tittle {
-        order: 1;
-    }
     .about__text {
         width: 100%;
         order: 3;
@@ -56,7 +52,7 @@
         margin: 0;
         padding: 4vw 10vw 0 10vw;
         font-size: clamp(1rem, 2.5vw, 1.8rem);   
-        line-height: 25px; 
+        line-height: 1.5;
     }   
     .about__card {
         padding-top: 8vw;
@@ -69,10 +65,6 @@
         gap: clamp(20px, 10.2vw, 70px);
     }
     .about__icons-text {
-        font-size: clamp(1rem, 2vw, 1.4rem);  
-    }
-    .about__icons-text {
-        /* max-width: 32.8vw; */
         font-size: clamp(0.9rem, 2vw, 1.6rem);  
         text-align: center;
         margin: 0;
@@ -91,11 +83,12 @@
         align-items: center;
     }
     .services__item-text {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 4vw;
         text-align: justify;
         hyphens: auto;
-        padding: 0 4vw 0 4vw;
-        text-align: justify;
-        line-height: 25px; 
+        line-height: 1.5; 
     }
     .services__item-img {
         width: clamp(180px, 45vw, 250px);
@@ -115,11 +108,10 @@
         align-items: center;
     }
     .reviews__text {
-        line-height: 25px; 
+        line-height: 1.5;
     }  
     .reviews__card {
-        width: clamp(280px, 62vw, 400px);
-        
+        width: clamp(280px, 62vw, 400px); 
     }  
     .review__quote {
         font-size: clamp(3rem, 8vw, 8rem); 
@@ -136,7 +128,7 @@
     .footer__logo {
         width: clamp(180px, 30vw, 360px);
     }
-    .iframe {
+    .footer__map iframe {
         width: clamp(250px, 80vw, 600px);
         height: clamp(200px, 45vw, 500px); 
     }
@@ -145,20 +137,21 @@
 @media (max-width: 900px) {
 
     .gallery__card {
-        flex-basis: calc((90% - 40px) / 2);
+        flex-basis: calc((90% - 3vw) / 2);
         border-radius: 20px;
     }
-    .last { 
+    .gallery__card--last { 
         display: none;
     }
-        .reviews__item {
+    .reviews__item {
         flex-wrap: wrap;
         gap: clamp(40px, 6vw, 50px);
     }
     .reviews__card {
-        flex-basis: calc((90% - 40px) / 2);
+        flex: 1 1 400px;
+        max-width: 400px;
     }
-        .review__quote {
+    .review__quote {
         font-size: clamp(3rem, 6.5vw, 5rem); 
     } 
 }
