@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
 </head>
-<body class="body">
+<body>
     <header class="header">
         <div class="header__decoration">
             <img class="header__decoration-img" src="assets/icons/Decoration-1.png" alt="Декорация">
@@ -55,10 +55,10 @@
 
     <section class="hero" id="hero">
         <div class="hero__info">
-            <p class="hero__text-big" data-aos="fade-right" >Ваши идеальные <br>брови &mdash; <span class="hero__accent">наша <br>экспертиза</span></p>
-            <p class="hero__text-desc" data-aos="fade-right">Подчеркнём вашу естественную <br><span class="hero__accent">красоту</span> с особым вниманием и <br class="desktop-br">профессионализмом</p>
-            <p class="hero__text-desc" data-aos="fade-right" data-aos-offset="100">Напишите нам — подберём <span class="hero__accent"><br class="desktop-br">удобное <br class="mobile-br">время</span>  для записи</p>
-            <button class="button whatsup_open" data-aos="fade-right" data-aos-offset="100" type="button">
+            <p class="hero__title" data-aos="fade-right" >Ваши идеальные <br>брови &mdash; <span class="hero__accent">наша <br>экспертиза</span></p>
+            <p class="hero__desc" data-aos="fade-right">Подчеркнём вашу естественную <br><span class="hero__accent">красоту</span> с особым вниманием и <br class="desktop-br">профессионализмом</p>
+            <p class="hero__desc" data-aos="fade-right" data-aos-offset="100">Напишите нам — подберём <span class="hero__accent"><br class="desktop-br">удобное <br class="mobile-br">время</span>  для записи</p>
+            <button class="button js-whatsapp" data-aos="fade-right" data-aos-offset="100" type="button">
                 Записаться онлайн
             </button>            
         </div>
@@ -66,7 +66,7 @@
 
     <section class="about" id="about">
         <h2 class="title">О нас</h2>
-        <div class="about__main">
+        <div class="about__content">
             <img class="about__decoration-img" src="assets/icons/Decoration-2.png">
             <div class="about__text" data-aos="fade-right" data-aos-offset="250">
                 <p class="about__desc">
@@ -108,71 +108,71 @@
     <section class="services" id="services">
         <h2 class="title">Услуги</h2>
         <div class="services__item" data-aos="fade-right" data-aos-offset="300">
-            <div class="about__icons-wrap vizability">
-                <img class="services__item-icon" src="assets/icons/Resnits-Photoroom.png"> 
+            <div class="services__icons-wrap services__icon--mobile-hidden">
+                <img class="services__icon" src="assets/icons/Resnits-Photoroom.png"> 
             </div>
-            <div class="services__item-text">
-                <h3 class="title__cards">Коррекция бровей</h3>
-                <p class="card__text">
+            <div class="services__content">
+                <h3 class="services__title">Коррекция бровей</h3>
+                <p class="services__desc">
                     Аккуратная форма с учётом черт лица и роста волосков.
                 </p>
-                <p class="card__text-price">Цена: 400 &#8381;</p>
+                <p class="services__price">Цена: 400 &#8381;</p>
             </div>
-        <img class="services__item-img" src="assets/icons/Example.png"> 
+        <img class="services__img" src="assets/icons/Example.png"> 
         </div>
         <div class="services__item" data-aos="fade-left" data-aos-offset="300">
-            <div class="about__icons-wrap vizability">
-                <img class="services__item-icon" src="assets/icons/Resnits-Photoroom.png"> 
+            <div class="services__icons-wrap services__icon--mobile-hidden">
+                <img class="services__icon" src="assets/icons/Resnits-Photoroom.png"> 
             </div>
-            <div class="services__item-text">
-                <h3 class="title__cards">Окрашивание бровей</h3>
-                <p class="card__text">
+            <div class="services__content">
+                <h3 class="services__title">Окрашивание бровей</h3>
+                <p class="services__desc">
                     Коррекция формы и окрашивание для чёткого, выразительного результата.
                 </p> 
-                <p class="card__text-price">Цена: 800 &#8381;</p>               
+                <p class="services__price">Цена: 800 &#8381;</p>               
             </div>
-            <img class="services__item-img" src="assets/icons/Example.png">     
+            <img class="services__img" src="assets/icons/Example.png">     
         </div>
         <div class="services__item" data-aos="fade-right" data-aos-offset="300">
-            <div class="about__icons-wrap vizability">
-                <img class="services__item-icon" src="assets/icons/Resnits-Photoroom.png"> 
+            <div class="services__icons-wrap services__icon--mobile-hidden">
+                <img class="services__icon" src="assets/icons/Resnits-Photoroom.png"> 
             </div>
-            <div class="services__item-text">
-                <h3 class="title__cards">Ламинирование бровей</h3>
-                <p class="card__text">
+            <div class="services__content">
+                <h3 class="services__title">Ламинирование бровей</h3>
+                <p class="services__desc">
                     Коррекция, окрашивание и ламинирование для фиксации и ухоженного вида.
                 </p>   
-                <p class="card__text-price">Цена: 1400 &#8381;</p>             
+                <p class="services__price">Цена: 1400 &#8381;</p>             
             </div>
-            <img class="services__item-img" src="assets/icons/Example.png"> 
+            <img class="services__img" src="assets/icons/Example.png"> 
         </div>
         <div class="services__item" data-aos="fade-left" data-aos-offset="300">
-            <div class="about__icons-wrap vizability">
-                <img class="services__item-icon" src="assets/icons/Resnits-Photoroom.png"> 
+            <div class="services__icons-wrap services__icon--mobile-hidden">
+                <img class="services__icon" src="assets/icons/Resnits-Photoroom.png"> 
             </div>
-            <div class="services__item-text">
-                <h3 class="title__cards">Депиляция зоны над губой</h3>
-                <p class="card__text">
+            <div class="services__content">
+                <h3 class="services__title">Депиляция зоны над губой</h3>
+                <p class="services__desc">
                     Деликатное удаление волосков для гладкой кожи.
                 </p>
-                <p class="card__text-price">Цена: 200 &#8381;</p>              
+                <p class="services__price">Цена: 200 &#8381;</p>              
             </div>
-            <img class="services__item-img" src="assets/icons/Example.png"> 
+            <img class="services__img" src="assets/icons/Example.png"> 
         </div>
         <div class="services__item" data-aos="fade-right" data-aos-offset="300">
-            <div class="about__icons-wrap vizability">
-                <img class="services__item-icon" src="assets/icons/Resnits-Photoroom.png"> 
+            <div class="services__icons-wrap services__icon--mobile-hidden">
+                <img class="services__icon" src="assets/icons/Resnits-Photoroom.png"> 
             </div>
-            <div class="services__item-text">
-                <h3 class="title__cards">Окрашивание ресниц</h3>
-                <p class="card__text">
+            <div class="services__content">
+                <h3 class="services__title">Окрашивание ресниц</h3>
+                <p class="services__desc">
                     Насыщенный оттенок ресниц для более выразительного взгляда.
                 </p>
-                <p class="card__text-price">Цена: 300 &#8381;</p>                
+                <p class="services__price">Цена: 300 &#8381;</p>                
             </div>
-            <img class="services__item-img" src="assets/icons/Example.png"> 
+            <img class="services__img" src="assets/icons/Example.png"> 
         </div>            
-        <button class="button div__button whatsup_open" type="button" data-aos="fade-up" data-aos-offset="50">
+        <button class="button button--section js_whatsapp" type="button" data-aos="fade-up" data-aos-offset="50">
             Записаться онлайн
         </button> 
     </section>
@@ -198,16 +198,16 @@
             <div class="gallery__card" data-aos="fade-left" data-aos-offset="200">
                 <img class="gallery__img" src="assets/icons/Example.png">
             </div>     
-            <div class="gallery__card vizability" data-aos="fade-right" data-aos-offset="200">
+            <div class="gallery__card gallery__card--mobile-hidden" data-aos="fade-right" data-aos-offset="200">
                 <img class="gallery__img" src="assets/icons/Example.png">
             </div> 
-            <div class="gallery__card vizability" data-aos="fade-left" data-aos-offset="200">
+            <div class="gallery__card gallery__card--mobile-hidden" data-aos="fade-left" data-aos-offset="200">
                 <img class="gallery__img" src="assets/icons/Example.png">
             </div>   
-            <div class="gallery__card vizability gallery__card--last" data-aos="fade-right" data-aos-offset="200">
+            <div class="gallery__card gallery__card--mobile-hidden gallery__card--medium-hidden" data-aos="fade-right" data-aos-offset="200">
                 <img class="gallery__img" src="assets/icons/Example.png">
             </div>
-            <button class="button div__button" type="button" id="inst_open" data-aos="fade-up" data-aos-offset="50">
+            <button class="button button--section" type="button" id="js-instagram" data-aos="fade-up" data-aos-offset="50">
                 Смотреть больше работ
             </button>    
         </div>
@@ -217,34 +217,34 @@
         <h2 class="title">Отзывы наших клиентов</h2> 
         <div class="reviews__item">
             <div class="reviews__card" data-aos="fade-right" data-aos-offset="250">
-                <div class="reviews__card-img">
+                <div class="reviews__avatar">
                     <img class="reviews__img" src="assets/icons/About.png">
                 </div>
                 <h2 class="reviews__card-title">Виктория</h2>
-                <div class="review__stars">★★★★★</div>
+                <div class="reviews__stars">★★★★★</div>
                 <p class="reviews__text">Прекрасная студия, <br>хожу не первый раз, все очень нравится. Мастер Яна- профессионал <br>своего дела 🥰🌸</p>
-                <a class="reviews__links" href="https://2gis.ru/reviews/70000001117090049/review/273304740">2Гис</a>
-                <div class="review__quote">”</div>
+                <a class="reviews__link" href="https://2gis.ru/reviews/70000001117090049/review/273304740">2Гис</a>
+                <div class="reviews__quote">”</div>
             </div>
             <div class="reviews__card" data-aos="fade-left" data-aos-offset="250">
-                <div class="reviews__card-img">
+                <div class="reviews__avatar">
                     <img class="reviews__img" src="assets/icons/About.png">
                 </div>
                 <h2 class="reviews__card-title">Сергей</h2>
-                <div class="review__stars">★★★★★</div>
+                <div class="reviews__stars">★★★★★</div>
                 <p class="reviews__text">Приятная атмосфера, все чисто и аккуратно! Мастер отлично выполнила работу, результатом остался доволен!😍</p>
-                <a class="reviews__links" href="https://2gis.ru/reviews/70000001117090049/review/273224097">2Гис</a>
-                <div class="review__quote">”</div>
+                <a class="reviews__link" href="https://2gis.ru/reviews/70000001117090049/review/273224097">2Гис</a>
+                <div class="reviews__quote">”</div>
             </div>
             <div class="reviews__card" data-aos="fade-right" data-aos-offset="250">
-                <div class="reviews__card-img">
+                <div class="reviews__avatar">
                     <img class="reviews__img" src="assets/icons/About.png">
                 </div>
                 <h2 class="reviews__card-title">Диана</h2>
-                <div class="review__stars">★★★★★</div>
+                <div class="reviews__stars">★★★★★</div>
                 <p class="reviews__text">Очень понравился результат! Всё чисто, аккуратно и быстро. Обязательно вернусь ещё.</p>
-                <a class="reviews__links" href="https://2gis.ru/reviews/70000001117090049/review/273300572">2Гис</a>
-                <div class="review__quote">”</div>
+                <a class="reviews__link" href="https://2gis.ru/reviews/70000001117090049/review/273300572">2Гис</a>
+                <div class="reviews__quote">”</div>
             </div>
         </div>
     </section>
@@ -255,14 +255,14 @@
                 <img class="footer__logo" src="assets/icons/Logo.png" alt="Логотоип салона красоты">
             </div>
             <div class="footer__info-item">
-                <div class="footer__desc">
-                    <a class="footer__links phone" href="https://wa.me/79143366058"><i class="fa-brands fa-whatsapp"></i> +7-(914)-336-60-58</a>
+                <div class="footer__contact">
+                    <a class="footer__link phone" href="https://wa.me/79143366058"><i class="fa-brands fa-whatsapp"></i> +7-(914)-336-60-58</a>
                 </div>
-                <div class="footer__desc">
-                    <a class="footer__links" href="https://www.instagram.com/_browology_vdk_?igsi=MXU4dXN3dGEwNmwwbg=="><i class="fa-brands fa-instagram"></i> BROWOLOGY_VDK</a>
+                <div class="footer__contact">
+                    <a class="footer__link" href="https://www.instagram.com/_browology_vdk_?igsi=MXU4dXN3dGEwNmwwbg=="><i class="fa-brands fa-instagram"></i> BROWOLOGY_VDK</a>
                 </div>
-                <div class="footer__desc">
-                    <a class="footer__links" href="https://go.2gis.com/BJdWg"><i class="fa-solid fa-location-dot"></i> Партизанский простпект, 58-в</a>
+                <div class="footer__contact">
+                    <a class="footer__link" href="https://go.2gis.com/BJdWg"><i class="fa-solid fa-location-dot"></i> Партизанский простпект, 58-в</a>
                 </div>
             </div>
         </div>
@@ -271,8 +271,8 @@
                 loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
             </iframe>
         </div>
-        <div class="about__me">
-            <p class="about__me-text">© Designed and developed by <a class="line about__me-link" href="https://github.com/sugrinovich">sugrinovich</a> All rights reserved.</p>
+        <div class="footer__copyright ">
+            <p class="footer__copyright-text">© Designed and developed by <a class="line footer__author-link " href="https://github.com/sugrinovich">sugrinovich</a> All rights reserved.</p>
         </div>
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

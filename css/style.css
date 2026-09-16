@@ -60,12 +60,12 @@
     padding-left: 16vw;
     max-width: 44vw;
 }
-.hero__text-big {
+.hero__title {
     margin: 0;
     font-size: clamp(2.2rem, 5vw, 3.8rem);
     font-family: "Playfair Display", serif;
 }
-.hero__text-desc {
+.hero__desc{
     margin-top: 3.5vw;
     margin-bottom: 0;
     font-size: clamp(1.2rem, 2.5vw, 1.8rem); 
@@ -99,7 +99,7 @@
     background:
         linear-gradient(180deg, #FBF2EC 0%, var(--color-bg) 50%, var(--color-card) 100%);
 }
-.about__main {
+.about__content {
     display: flex;
     flex-direction: row;
 }
@@ -179,7 +179,7 @@
     transform: translateY(0.3vw);
     border-radius: 5px;
 }
-.title__cards {
+.services__title {
     text-align: center;
     font-weight: normal;
     margin-bottom: 0;
@@ -188,13 +188,13 @@
     font-weight: 500;
     font-family: "Playfair Display", serif;
 }
-.card__text {
+.services__desc {
     margin-bottom: 0;
     padding-left: 2vw;
     font-size: clamp(1rem, 2vw, 1.6rem); 
     font-family: "Montserrat", sans-serif;
 }
-.card__text-price {
+.services__price {
     padding-left: 2vw;
     font-size: clamp(1rem, 2vw, 1.6rem);
     font-family: "Montserrat", sans-serif; 
@@ -217,26 +217,26 @@
     max-width: 1200px;
     height: auto;
 }
-.services__item-text {
+.services__content {
     flex: 1;
     text-align: justify;
     hyphens: auto;
     line-height: 1.5;
 }
-.services__item-img {
-    width: clamp(150px, 26vw, 280px);
+.services__img {
+    width: clamp(180px, 26vw, 350px);
     border-radius: 20px;
-    aspect-ratio: 1150 / 915;
+    object-fit: cover;
 }
-.services__item-icon {
+.services__icon {
     width: clamp(120px, 16.5vw, 160px);
     height: clamp(140px, 18vw, 180px);
 }
-.about__icons-wrap {
+.services__icons-wrap {
     display: flex;
     align-items: center;
 }
-.div__button {
+.button--section {
     margin: 0;
 }
 
@@ -280,17 +280,17 @@
     flex-basis: calc((90% - 30px) / 3);
     max-width: 400px;
 }
-.review__stars {
+.reviews__stars {
     color: var(--color-accent-other);
     font-size: clamp(1.1rem, 2vw, 1.6rem); 
 
 }
-.review__quote {
+.reviews__quote {
     margin-top: 2.5vw;
     color: var(--color-accent-other);
     font-size: clamp(3rem, 3.5vw, 5rem); 
 }
-.reviews__card-img {
+.reviews__avatar {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -320,7 +320,7 @@
     height: 100%;
     object-fit: cover;
 }
-.reviews__links {
+.reviews__link {
     color: var(--color-accent-other);
     font-size: clamp(1.2rem, 2.4vw, 1.6rem);
     text-decoration: none;
@@ -353,12 +353,12 @@
     flex: 0.5;
     height: 300px;
 }
-.footer__links {
+.footer__link {
     display: inline-block;
     text-decoration: none;
     color: var(--color-accent-dark);  
 }
-.footer__links:hover {
+.footer__link:hover {
     transform: scale(1.05);
 }
 .footer__link i {
@@ -367,7 +367,7 @@
 .footer__logo {
     width: clamp(200px, 30vw, 320px);
 }
-.footer__desc {
+.footer__contact {
     text-align: justify;
     margin-top: 2vw;
     padding-left: 3vw;
@@ -378,22 +378,22 @@
     display: flex;
     justify-content: center; 
 }
-.footer__map iframe {
+.footer__map-iframe {
     border-radius: 20px;
     width: clamp(250px, 90vw, 1200px);
     height: clamp(200px, 45vw, 600px); 
     border: var(--color-accent-other);
 }
-.about__me {
+.footer__copyright {
     margin-top: clamp(20px, 4vw, 30px);
     text-align: center;
     padding-bottom: clamp(5px, 2vw, 10px);
 }
-.about__me-link {
+.footer__author-link {
     color: var(--color-text);
     text-decoration: underline;
 }
-.about__me-text {
+.footer__copyright-text {
     padding-left: 1vw;
     font-size: clamp(1rem, 2vw, 1.4rem);
     font-family: "Playfair Display", serif;  

@@ -20,10 +20,10 @@
         padding: 4vw 0 0 10vw;
         max-width: 48vw;
     }
-    .hero__text-big {
+    .hero__title {
         font-size: clamp(1.2rem, 6vw, 2.4rem);
     }
-    .hero__text-desc {
+    .hero__desc {
         font-size: clamp(0.9rem, 3.2vw, 1.6rem); 
         line-height: 1.5;  
     }
@@ -33,11 +33,11 @@
             clamp(12px, 2vw, 16px);
         font-size: clamp(0.8rem, 3vw, 1.6rem);
     }
-    .div__button {
+    .button--section {
         margin-top: 2vw;
         font-size: clamp(0.9rem, 3vw, 1.6rem);
     }
-    .about__main {
+    .about__content {
         flex-direction: column;
     }
     .about__text {
@@ -72,8 +72,7 @@
     .about__icons-img {
         width: 80px;
     }
-
-    .vizability {
+    .gallery__card--mobile-hidden, .services__icon--mobile-hidden{
         display: none;
     }
     .services__item {
@@ -90,17 +89,18 @@
         hyphens: auto;
         line-height: 1.5; 
     }
-    .services__item-img {
-        width: clamp(180px, 45vw, 250px);
-        margin-bottom: 3vw;
+    .services__img {
+        width: clamp(240px, 48vw, 300px);
+        margin-bottom: 4vw;
     }
     .gallery__items {
+        margin-top: 3vw;
         flex-direction: column;
         align-items: center;
     }
     .gallery__card {
         flex-basis: auto;
-        width: clamp(250px, 65vw, 500px);
+        width: clamp(280px, 65vw, 500px);
     }
     .reviews__item {
         margin-top: clamp(30px, 12vw, 35px);
@@ -113,7 +113,7 @@
     .reviews__card {
         width: clamp(280px, 62vw, 400px); 
     }  
-    .review__quote {
+    .reviews__quote {
         font-size: clamp(3rem, 8vw, 8rem); 
     } 
     .footer__info {
@@ -128,7 +128,7 @@
     .footer__logo {
         width: clamp(180px, 30vw, 360px);
     }
-    .footer__map iframe {
+    .footer__map-iframe {
         width: clamp(250px, 80vw, 600px);
         height: clamp(200px, 45vw, 500px); 
     }
@@ -140,7 +140,7 @@
         flex-basis: calc((90% - 3vw) / 2);
         border-radius: 20px;
     }
-    .gallery__card--last { 
+    .gallery__card--medium-hidden { 
         display: none;
     }
     .reviews__item {
@@ -151,7 +151,7 @@
         flex: 1 1 400px;
         max-width: 400px;
     }
-    .review__quote {
+    .reviews__quote {
         font-size: clamp(3rem, 6.5vw, 5rem); 
     } 
 }

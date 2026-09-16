@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     AOS.init({duration: 800, once: false});
 
-    const button_singup = document.querySelectorAll('.whatsup_open');
-    const button_watchall = document.getElementById('inst_open');
+    const button_singup = document.querySelectorAll('.js-whatsapp');
+    const button_watchall = document.getElementById('js-instagram');
 
 
     button_singup.forEach(function (button, index) {
