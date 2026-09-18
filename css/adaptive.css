@@ -1,30 +1,27 @@
 @media (min-width: 320px) and (max-width: 690px) {
-    .desktop-br {
-        display: none;
-    }
     .header {
         height: auto;
-        min-height: 235px;
+        min-height: 200px;
     }
     .menu__list {
         flex-wrap: wrap;
     }
     .hero {
-        background-image: url(../assets/images/Background-2.png);
+        background-image: url(../assets/images/Background-mobile.png);
         background-repeat: no-repeat;
         background-position: center top;
         background-size: 100% auto;
         aspect-ratio: 1160 / 1350;
     }
     .hero__content {
-        padding: 4vw 0 0 10vw;
-        max-width: 48vw;
+        padding: 6vw 0 0 10vw;
+        max-width: 55vw;
     }
     .hero__title {
         font-size: clamp(1.2rem, 6vw, 2.4rem);
     }
     .hero__desc {
-        font-size: clamp(0.9rem, 3.2vw, 1.6rem); 
+        font-size: clamp(1rem, 3.2vw, 1.6rem); 
         line-height: 1.5;  
     }
     .button {
@@ -51,7 +48,7 @@
         hyphens: auto;
         margin: 0;
         padding: 4vw 10vw 0 10vw;
-        font-size: clamp(1rem, 2.5vw, 1.8rem);   
+        font-size: clamp(1rem, 3.2vw, 1.6rem);  
         line-height: 1.5;
     }   
     .about__card {
@@ -65,7 +62,7 @@
         gap: clamp(20px, 10.2vw, 70px);
     }
     .about__icons-text {
-        font-size: clamp(0.9rem, 2vw, 1.6rem);  
+        font-size: clamp(1rem, 3.2vw, 1.6rem);  
         text-align: center;
         margin: 0;
     }
@@ -93,6 +90,12 @@
         width: clamp(240px, 48vw, 300px);
         margin-bottom: 4vw;
     }
+    .services__desc {
+        font-size: clamp(1rem, 3.2vw, 1.6rem); 
+    }
+    .services__price {
+        font-size: clamp(1rem, 3.2vw, 1.6rem); 
+    }
     .gallery__items {
         margin-top: 3vw;
         flex-direction: column;
@@ -108,6 +111,7 @@
         align-items: center;
     }
     .reviews__text {
+        font-size: clamp(1rem, 3.2vw, 1.6rem); 
         line-height: 1.5;
     }  
     .reviews__card {
@@ -116,6 +120,9 @@
     .reviews__quote {
         font-size: clamp(3rem, 8vw, 8rem); 
     } 
+    .reviews__link {
+        font-size: clamp(1.3rem, 3.8vw, 1.6rem); 
+    }
     .footer__info {
         flex-direction: column;
     }
@@ -134,8 +141,11 @@
     }
 }
 
-@media (max-width: 900px) {
-
+@media (min-width: 691px) and (max-width: 980px) {
+    .hero {
+        background-image: url(/assets/images/Background-medium.png);
+        aspect-ratio: 1440 / 860;
+    }
     .gallery__card {
         flex-basis: calc((90% - 3vw) / 2);
         border-radius: 20px;

@@ -1,9 +1,9 @@
-.body {
+body {
     margin: 0;
+    overflow-x: clip;
 }
 .header {
     position: relative;
-    height: 210px;
     background: 
         radial-gradient(circle clamp(200px, 30vw, 420px) at 50px 0px, var(--color-footer), transparent 50%),
         linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-soft) 50%, #FCF5EF 100%);
@@ -35,7 +35,7 @@
 } 
 .menu__link { 
     text-decoration: none;
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
     padding: 7px;
     border-radius: 8px;
     color: var(--color-text);
@@ -48,29 +48,29 @@
     background-color: var(--color-footer);
 }
 .hero {
-    background-image: url(../assets/images/Background-1.png);
+    background-image: url(../assets/images/Bacground-dekstop.png);
     background-color: var(--color-under-hero);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100% auto;
-    aspect-ratio: 1440 / 860;
+    aspect-ratio: 1600 / 860;
 }
 
 .hero__content {
     margin: 0;
-    padding-top: 8vw;
-    padding-left: 16vw;
-    max-width: 44vw;
+    padding-top: 5vw;
+    padding-left: 20vw;
+    max-width: 35vw;
 }
 .hero__title {
     margin: 0;
-    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-size: clamp(1.6rem, 4vw, 3.2rem);
     font-family: "Playfair Display", serif;
 }
 .hero__desc{
-    margin-top: 3.5vw;
+    margin-top: 3vw;
     margin-bottom: 0;
-    font-size: clamp(1.2rem, 2.5vw, 1.8rem); 
+    font-size: clamp(1.1rem, 2vw, 1.6rem); 
     font-family: "Montserrat", sans-serif;
 }
 .hero__accent {
@@ -100,6 +100,7 @@
     position: relative;
     background:
         linear-gradient(180deg, #FBF2EC 0%, var(--color-bg) 50%, var(--color-card) 100%);
+
 }
 .about__content {
     display: flex;
@@ -128,7 +129,7 @@
     text-align: justify;
     margin: 0;
     padding: 4vw 0 0 10vw;
-    font-size: clamp(1.05rem, 2vw, 1.6rem);   
+    font-size: clamp(1.1rem, 2vw, 1.6rem);   
     font-family: "Montserrat", sans-serif;
     line-height: 1.5;
 }
