@@ -9,7 +9,7 @@
         flex-wrap: wrap;
     }
     .hero {
-        background-image: url(../assets/images/Background-mobile.png);
+        background-image: url(../assets/images/background-mobile.webp);
         background-repeat: no-repeat;
         background-position: center top;
         background-size: 100% auto;
@@ -150,7 +150,7 @@
 
 @media (min-width: 691px) and (max-width: 980px) {
     .hero {
-        background-image: url(../assets/images/Background-medium.png);
+        background-image: url(../assets/images/background-medium.webp);
         aspect-ratio: 1440 / 860;
     }
     .gallery__card {

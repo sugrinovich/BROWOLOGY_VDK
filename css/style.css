@@ -6,6 +6,9 @@ body, html {
 html {
     scroll-behavior: smooth;
 }
+img {
+    height: auto;
+}
 .header {
     position: relative;
     background: 
@@ -49,7 +52,7 @@ html {
     background-color: var(--color-footer);
 }
 .hero {
-    background-image: url(../assets/images/Bacground-dekstop.png);
+    background-image: url(../assets/images/background-desktop.webp);
     background-color: var(--color-under-hero);
     background-repeat: no-repeat;
     background-position: center top;
