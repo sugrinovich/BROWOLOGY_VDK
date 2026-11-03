@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sugrinovich.github.io/BROWOLOGY_VDK/sitemap.xml

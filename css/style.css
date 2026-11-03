@@ -68,6 +68,7 @@ img {
 }
 .hero__title {
     margin: 0;
+    font-weight: normal;
     font-size: clamp(1.6rem, 4vw, 3.2rem);
     font-family: "Playfair Display", serif;
 }
@@ -371,6 +372,12 @@ img {
 }
 .footer__link i {
     color: var(--color-accent); 
+}
+.footer__hours {
+    color: var(--color-accent-dark);
+}
+.footer__hours i {
+    color: var(--color-accent);
 }
 .footer__logo {
     width: clamp(200px, 30vw, 320px);
