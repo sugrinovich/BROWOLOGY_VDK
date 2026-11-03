@@ -6,8 +6,18 @@ body, html {
 html {
     scroll-behavior: smooth;
 }
+body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+}
 img {
     height: auto;
+}
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 4px;
 }
 .header {
     position: relative;
@@ -46,7 +56,6 @@ img {
     padding: 7px;
     border-radius: 8px;
     color: var(--color-text);
-    font-family: "Montserrat", sans-serif;
 }
 .menu__link:hover {
     background-color: var(--color-footer);
@@ -70,13 +79,12 @@ img {
     margin: 0;
     font-weight: normal;
     font-size: clamp(1.6rem, 4vw, 3.2rem);
-    font-family: "Playfair Display", serif;
+    font-family: var(--font-heading);
 }
 .hero__desc{
     margin-top: 3vw;
     margin-bottom: 0;
     font-size: clamp(1.1rem, 2vw, 1.6rem); 
-    font-family: "Montserrat", sans-serif;
 }
 .hero__accent {
     color: var(--color-accent);
@@ -97,10 +105,9 @@ img {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.2s ease;
-    font-family: "Montserrat", sans-serif;
 }
 .button:hover {
-    background-color: var( --color-accent-dark);
+    background-color: var(--color-accent-dark);
     transform: scale(1.03);
 }
 .about {
@@ -111,6 +118,8 @@ img {
 .about__content {
     display: flex;
     flex-direction: row;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 .about__text {
     flex: 0 0 60%;
@@ -136,7 +145,6 @@ img {
     margin: 0;
     padding: 4vw 0 0 10vw;
     font-size: clamp(1.1rem, 2vw, 1.6rem);   
-    font-family: "Montserrat", sans-serif;
     line-height: 1.5;
 }
 .about__icons {
@@ -154,7 +162,6 @@ img {
     font-size: clamp(0.8rem, 2vw, 1.5rem);  
     text-align: center;
     margin: 0;
-    font-family: "Montserrat", sans-serif;
 }
 .about__icons-img {
     width: clamp(70px, 10vw, 120px);
@@ -170,12 +177,12 @@ img {
     padding: 6vw 0 3vw 0;
     font-weight: normal;
     font-size: clamp(2rem, 4vw, 2.8rem);
-    font-family: "Playfair Display", serif;
+    font-family: var(--font-heading);
 }
 .title::after {
     content: "";
     width: clamp(60px, 10vw, 120px);
-    height: clamp(2px, 0.4vw, 5px);;
+    height: clamp(2px, 0.4vw, 5px);
     background: linear-gradient(90deg, var(--color-accent) 0%, transparent 100%);
     transform: translateY(0.3vw);
     border-radius: 5px;
@@ -183,7 +190,7 @@ img {
 .title::before {
     content: "";
     width: clamp(60px, 10vw, 120px);
-    height: clamp(2px, 0.4vw, 5px);;
+    height: clamp(2px, 0.4vw, 5px);
     background: linear-gradient(270deg, var(--color-accent) 0%, transparent 100%);
     transform: translateY(0.3vw);
     border-radius: 5px;
@@ -194,19 +201,16 @@ img {
     margin-bottom: 0;
     margin-top: 2vw;
     font-size: clamp(1.45rem, 3vw, 2.2rem); 
-    font-weight: 500;
-    font-family: "Playfair Display", serif;
+    font-family: var(--font-heading);
 }
 .services__desc {
     margin-bottom: 0;
     padding-left: 2vw;
     font-size: clamp(1rem, 2vw, 1.6rem); 
-    font-family: "Montserrat", sans-serif;
 }
 .services__price {
     padding-left: 2vw;
     font-size: clamp(1rem, 2vw, 1.6rem);
-    font-family: "Montserrat", sans-serif; 
 }
 .services {
     display: flex;
@@ -257,7 +261,9 @@ img {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3vw;
+    gap: clamp(16px, 3vw, 48px);
+    max-width: 1600px;
+    margin: 0 auto;
 }
 .gallery__card {
     flex: 0 1 calc((90% - 6vw) / 3);
@@ -297,6 +303,7 @@ img {
 .reviews__quote {
     margin-top: 2.5vw;
     color: var(--color-accent-other);
+    font-family: var(--font-heading);
     font-size: clamp(3rem, 3.5vw, 5rem); 
 }
 .reviews__avatar {
@@ -311,9 +318,9 @@ img {
 .reviews__name {
     margin: 0;
     transform: translateY(-30%);
-    font-weight: 500;
+    font-weight: normal;
     font-size: clamp(1.5rem, 2.5vw, 1.8rem); 
-    font-family: "Playfair Display", serif;
+    font-family: var(--font-heading);
 }
 .reviews__text {
     text-align: center;
@@ -322,7 +329,6 @@ img {
     padding-left: 2vw;
     padding-right: 2vw;
     line-height: 30px;
-    font-family: "Montserrat", sans-serif;
 }
 .reviews__avatar-img {
     width: 100%;
@@ -330,9 +336,12 @@ img {
     object-fit: cover;
 }
 .reviews__link {
-    color: var(--color-accent-other);
+    display: inline-block;
+    color: var(--color-accent);
     font-size: clamp(1.2rem, 2.4vw, 1.6rem);
+    font-family: var(--font-heading);
     text-decoration: none;
+    transition: transform 0.2s ease;
 }
 .reviews__link:hover {
     transform: scale(1.05);
@@ -352,14 +361,14 @@ img {
     flex: 0.5;
     display: flex;
     align-items: center;
-    height: 300px;
+    min-height: 300px;
 }
 .footer__info-item:last-child {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 0.5;
-    height: 300px;
+    min-height: 300px;
 }
 .footer__link {
     display: inline-block;
@@ -370,28 +379,32 @@ img {
 .footer__link:hover {
     transform: scale(1.05);
 }
-.footer__link i {
-    color: var(--color-accent); 
-}
 .footer__hours {
     color: var(--color-accent-dark);
 }
-.footer__hours i {
+.footer__link .icon,
+.footer__hours .icon {
     color: var(--color-accent);
+}
+.icon {
+    width: auto;
+    height: 1em;
+    vertical-align: -0.125em;
+    fill: currentColor;
 }
 .footer__logo {
     width: clamp(200px, 30vw, 320px);
 }
 .footer__contact {
-    text-align: justify;
-    margin-top: 2vw;
+    margin-top: clamp(10px, 1.5vw, 24px);
     padding-left: 3vw;
     font-size: clamp(1.1rem, 2.5vw, 1.5rem); 
-    font-family: "Playfair Display", serif;  
+    font-family: var(--font-heading);
 }
 .footer__map {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    margin-top: clamp(16px, 2vw, 32px);
 }
 .footer__map-iframe {
     border-radius: 20px;
@@ -412,7 +425,7 @@ img {
 .footer__copyright-text {
     padding-left: 1vw;
     font-size: clamp(1rem, 2vw, 1.4rem);
-    font-family: "Playfair Display", serif;  
+    font-family: var(--font-heading);
 }
 
 
@@ -422,6 +435,22 @@ img {
 }
 .mobile-br {
     display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+    .button:hover,
+    .footer__link:hover,
+    .reviews__link:hover {
+        transform: none;
+    }
 }
 
 

@@ -20,15 +20,17 @@
     --color-card: #FFF9F5;
     --color-footer: #EFD1C8;
 
-    --color-accent: #B66F65;
+    --color-accent: #9E5C54;
     --color-accent-other: #B88B7A;
-    --color-accent-dark: #8F514A;
+    --color-accent-dark: #824740;
 
     --color-text: #24211F;
     --color-border: #E9D8CF;  
 
     --color-under-hero: #FBF2EC;
 
+    --font-body: "Montserrat", sans-serif;
+    --font-heading: "Playfair Display", serif;
 }
 
 
