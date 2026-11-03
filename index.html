@@ -13,7 +13,9 @@
     >
     
     
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://yandex.ru">
+
+    <link rel="stylesheet" href="vendor/aos/aos.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/adaptive.css">
@@ -32,22 +34,22 @@
         <nav class="menu">
             <ul class="menu__list">
                 <!-- <li class="menu__item">
-                    <a class="menu__link" href="hero">Главная</a>
+                    <a class="menu__link" href="#hero">Главная</a>
                 </li> -->
                 <li class="menu__item">
-                     <a class="menu__link" href="about">О нас</a>
+                     <a class="menu__link" href="#about">О нас</a>
                 </li>
                 <li class="menu__item">
-                     <a class="menu__link" href="services">Услуги</a>
+                     <a class="menu__link" href="#services">Услуги</a>
                 </li>
                 <li class="menu__item">
-                     <a class="menu__link" href="gallery">Галерея</a>
+                     <a class="menu__link" href="#gallery">Галерея</a>
                 </li>
                 <li class="menu__item">
-                     <a class="menu__link" href="reviews">Отзывы</a>
+                     <a class="menu__link" href="#reviews">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                     <a class="menu__link" href="footer">Контакты</a>
+                     <a class="menu__link" href="#footer">Контакты</a>
                 </li>
             </ul>
         </nav>
@@ -58,9 +60,9 @@
             <p class="hero__title">Ваши идеальные <br>брови &mdash; <span class="hero__accent">наша <br>экспертиза</span></p>
             <p class="hero__desc">Подчеркнём вашу естественную <br><span class="hero__accent">красоту</span> с особым вниманием и профессионализмом</p>
             <p class="hero__desc">Напишите нам — подберём <span class="hero__accent"><br class="desktop-br">удобное <br class="mobile-br">время</span>  для записи</p>
-            <button class="button js-whatsapp" type="button">
+            <a class="button" href="https://wa.me/79143366058" target="_blank" rel="noopener noreferrer">
                 Записаться онлайн
-            </button>            
+            </a>            
         </div>
     </section>
 
@@ -172,9 +174,9 @@
             </div>
             <img class="services__img" src="assets/icons/Example.png"> 
         </div>            
-        <button class="button button--section js-whatsapp" type="button" data-aos="fade-up" data-aos-offset="50">
+        <a class="button button--section" href="https://wa.me/79143366058" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-offset="50">
             Записаться онлайн
-        </button> 
+        </a> 
     </section>
 
     <section class="gallery" id="gallery">
@@ -207,9 +209,9 @@
             <div class="gallery__card gallery__card--mobile-hidden gallery__card--medium-hidden" data-aos="zoom-in-down" data-aos-offset="200">
                 <img class="gallery__img" src="assets/icons/Example.png">
             </div>
-            <button class="button button--section" type="button" id="js-instagram" data-aos="zoom-in-up" data-aos-offset="50">
+            <a class="button button--section" href="https://www.instagram.com/_browology_vdk_?igsi=MXU4dXN3dGEwNmwwbg==" target="_blank" rel="noopener noreferrer" data-aos="zoom-in-up" data-aos-offset="50">
                 Смотреть больше работ
-            </button>    
+            </a>    
         </div>
     </section>
 
@@ -249,7 +251,7 @@
         </div>
     </section>
 
-    <section class="footer" id="footer" data-aos="fade-up" data-aos-offset="200">
+    <section class="footer" id="footer">
         <div class="footer__info">
             <div class="footer__info-item">
                 <img class="footer__logo" src="assets/icons/Logo.png" alt="Логотоип салона красоты">
@@ -267,15 +269,15 @@
             </div>
         </div>
         <div class="footer__map">
-            <iframe class="footer__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d727.9635627884243!2d131.9078882812078!3d43.12858789090853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb3921707e27bc1%3A0x1bf2b3404e758d84!2z0J_QsNGA0YLQuNC30LDQvdGB0LrQuNC5INC_0YAuLCA1OC3Qsiwg0JLQu9Cw0LTQuNCy0L7RgdGC0L7Quiwg0J_RgNC40LzQvtGA0YHQutC40Lkg0LrRgNCw0LksIDY5MDAwMg!5e0!3m2!1sru!2sru!4v1786699990811!5m2!1sru!2sru" 
-                loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+            <iframe class="footer__map-iframe" src="https://yandex.ru/map-widget/v1/?ll=131.908437%2C43.128756&z=17&pt=131.908437%2C43.128756%2Cpm2rdm"
+                title="Карта: Партизанский проспект, 58-в" loading="lazy" allowfullscreen>
             </iframe>
         </div>
         <div class="footer__copyright ">
             <p class="footer__copyright-text">© Designed and developed by <a class="line footer__author-link " href="https://github.com/sugrinovich">sugrinovich</a> All rights reserved.</p>
         </div>
     </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="vendor/aos/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

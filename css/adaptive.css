@@ -2,6 +2,8 @@
     .header {
         height: auto;
         min-height: 200px;
+        background: 
+            linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-soft) 50%, #F9F2EF 100%);
     }
     .menu__list {
         flex-wrap: wrap;
@@ -11,11 +13,11 @@
         background-repeat: no-repeat;
         background-position: center top;
         background-size: 100% auto;
-        aspect-ratio: 1160 / 1350;
+        aspect-ratio: 1160 / 1270;
     }
     .hero__content {
         padding: 6vw 0 0 10vw;
-        max-width: 55vw;
+        max-width: 48vw;
     }
     .hero__title {
         font-size: clamp(1.2rem, 6vw, 2.4rem);
@@ -33,6 +35,11 @@
     .button--section {
         margin-top: 2vw;
         font-size: clamp(0.9rem, 3vw, 1.6rem);
+    }
+    .about {
+        position: relative;
+        background:
+            linear-gradient(180deg, #F8F0ED 0%, var(--color-bg) 50%, var(--color-card) 100%);
     }
     .about__content {
         flex-direction: column;
@@ -143,7 +150,7 @@
 
 @media (min-width: 691px) and (max-width: 980px) {
     .hero {
-        background-image: url(/assets/images/Background-medium.png);
+        background-image: url(../assets/images/Background-medium.png);
         aspect-ratio: 1440 / 860;
     }
     .gallery__card {
